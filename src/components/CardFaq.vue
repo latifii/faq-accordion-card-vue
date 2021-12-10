@@ -9,7 +9,7 @@
       @click="toggleEvent(indx)"
     >
       <h3 class="faq-content__title">{{ item.title }}</h3>
-      <div>
+      <div class="faq-svg">
         <svg
           class="svg"
           data-v-4fa7a832=""
@@ -75,6 +75,7 @@ export default {
   border-bottom: 1px solid var(--light-grayish-blue);
   cursor: pointer;
 }
+
 .faq-content__title {
   font-weight: 400;
   font-size: 1.3rem;
@@ -116,6 +117,9 @@ export default {
   .faq {
     text-align: left;
     padding: 5rem 7rem 2rem 0;
+  }
+  .faq-svg {
+    width: 1.5rem;
   }
   .faq-title {
     text-align: left;
